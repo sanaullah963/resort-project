@@ -1,0 +1,275 @@
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+font-family: sans-serif;
+}
+i{
+  color: #ffc107;
+  font-size: 40px;
+}
+.btn-warning{
+  position: relative;
+  border:  1.5px solid #ffc107;
+}
+.btn-warning:hover{
+background-color: #ffffff;
+color: #0F172B;
+border: 1.5px solid #0F172B;
+}
+.btn-warning::before{
+content: "";
+width: 100%;
+height: 100%;
+position: absolute;
+top: 0;
+left: 0;
+display: none;
+
+background-color: #000;
+}
+body{
+  background-color: #ecf0f1;
+}
+
+/*------navbar start */
+nav  .navbar-brand{
+text-transform: uppercase;
+font-size: 2.5rem;
+font-weight: 600;
+}
+ul li .nav-link{
+  color: #fff;
+  max-width: 100px;
+  transition: .4s;
+  transition: width 50px .3s;
+  border-radius: 5px;
+}
+ul li .nav-link:hover{
+  background-color: #ffc107;
+  transition: .3s;
+  color: #00f;
+}
+ul li .dropdown-menu{
+  margin-top: 1px;
+  transition: .3s;
+}
+ul li:hover .dropdown-menu{
+ display: block;
+}
+/*------navbar end */
+
+/*------header-carousel start */
+.headerCarousel .carousel .carousel-inner{
+  z-index: -1;
+}
+.headerCarousel .carousel-item::before{
+content: "";
+background-color: #000;
+opacity: 0.3;
+position: absolute;
+height: 100%;
+width: 100%;
+}
+.headerCarousel .carousel-caption{
+  position: absolute;
+  right: 15%;
+  bottom: 3.25rem;
+  left: 15%;
+  padding-bottom: 1.25rem;
+}
+.headerCarousel .carousel-caption h3{
+  font-size: 35px;
+  font-weight: 600;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  word-spacing: 10px;
+}
+.headerCarousel span{
+  font-size: 40px;
+  color: #4fdbf1;
+  border: 1px solid #fff;
+  padding: 0 8px;
+}
+@media screen and (min-width:900px) {
+  .headerCarousel .carousel-caption h3{
+    font-size: 70px;
+  }
+}
+@media screen and (max-width:650px) {
+  .headerCarousel .carousel-caption{
+    right: 10%;
+    bottom: 1.25rem;
+    left: 10%;
+    padding-bottom: .25rem;
+  }
+}
+@media screen and (max-width:560px) {
+  .headerCarousel .carousel-caption h3{
+    font-weight: 400;
+  }
+}
+@media screen and (max-width:410px) {
+  .headerCarousel .carousel-caption{
+    right: 5%;
+    bottom: .25rem;
+    left: 5%;
+    padding-bottom: .0rem;
+  }
+}
+@media screen and (max-width:350px) {
+  .headerCarousel .carousel-caption h3{
+    word-spacing: 0px;
+    line-height: 34px;
+  }
+  .headerCarousel span{
+    font-size: 25px;
+    padding: 0;
+    color: #e74c3c;
+    background-color: #fff;
+  }
+}
+/*------header-carousel end */
+
+
+/*------header-form start */
+.headerForm{
+  z-index: 1;
+  margin-top:-40px ;
+  background-color: #fff;
+
+  -webkit-box-shadow: inset 0px 0px 15px 2px #0000007d;
+  -moz-box-shadow: inset 0px 0px 15px 2px #0000007d;
+  box-shadow: inset 0px 0px 15px 2px #0000007d;
+}
+@media screen and (max-width:768px) {
+  .headerForm input,select,button{
+    margin: 10px 0;
+  }
+}
+@media screen and (max-width:650px){
+  .headerForm{
+    margin-top: 50px;
+  }
+}
+/*------header-form end */
+
+
+/*------about start */
+.about{
+  margin-top: 100px;
+}
+.about .aboutRight{
+  margin-top: 40px;
+}
+/*------about end */
+
+/*------our-rooms start */
+.OurRooms{
+  margin-top: 130px;
+}
+.OurRooms .roomsCard :hover{
+
+  /* -webkit-box-shadow:  0px 0px 10px 3px rgba(0,0,0,0.4);
+  -moz-box-shadow:  0px 0px 0px 0px rgba(0,0,0,0.4);
+  box-shadow: 0px 0px 10px 3px rgba(0,0,0,0.4); */
+}
+/*------our-rooms end */
+
+
+/*------luxury living start */
+.luxuryLIving{
+  margin-top: 100px;
+}
+.luxuryLIving .left{
+background-color: #0F172B;
+}
+/*------luxury living end */
+
+
+/*------our services start */
+.service{
+  margin-top: 140px;
+}
+.service .serviceItems .item .card{
+  -webkit-box-shadow:  0px 0px 10px 3px #00000066;
+  -moz-box-shadow:  0px 0px 10px 3px #00000066;
+  box-shadow: 0px 0px 10px 3px #00000066;
+}
+.service .serviceItems .item div{
+  transition: 1s;
+}
+.service .serviceItems .item :hover {
+  -webkit-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.27);
+  -moz-box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.27);
+  box-shadow: 0px 0px 0px 0px rgba(0,0,0,0.27);
+  transition: .2s;
+}
+.service .serviceItems span{
+  color: #e74c3c;
+}
+.service .serviceItems p{
+  margin-bottom: 0;
+}
+/*------our services end */
+
+
+/*------our-team start */
+.ourTeam{
+  margin-top: 140px;
+}
+.ourTeam .row .item .card{
+  box-shadow: 0px 0px 10px 3px #00000066;
+  transition: .5s;
+}
+.ourTeam .row .item .card:hover{
+  box-shadow: 0px 0px 0px 0px #00000066;
+  transition: .2s;
+}
+.ourTeam .row .card .card-img .icon{
+z-index: 1;
+top: 92%;
+left: 20%;
+}
+.ourTeam .row .card .card-img .icon a{
+  background-color: #ffc107;
+  width:40px;
+  padding: 8px 0;
+  margin: 0 5px;
+  text-align: center;
+}
+.ourTeam .row .card .card-img .icon a span{
+color: #fff;
+font-size: 25px;
+}
+/*------our-team end */
+
+
+/*------Newsletter start */
+ .newsletter{
+  transition: tra;
+}
+/*------Newsletter end */
+
+
+/*------footer start */
+footer{
+  background-color: #0F172B;
+  margin-top: 100px;
+  padding-top: 60px;
+}
+footer a .hoverSpan{
+  transition: .3s;
+}
+footer a .hoverSpan:hover{
+  letter-spacing: 1px;
+}
+footer .socialMedia p{
+margin: 0 5px;
+color: #ffff;
+font-size: 40px;
+transition: .3s;
+}
+footer .socialMedia p:hover{
+color: #8bbeff;
+}
+/*------footer end */
